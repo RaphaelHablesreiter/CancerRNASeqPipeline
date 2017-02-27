@@ -15,4 +15,4 @@ Paramaters that can be added to the execution command of **CancerRNAseq** are:
 * `silent (default = FALSE)`
 * `threads <Number of threads> (default = 1)`
 
-The only necessary parameter to execute the pipeline successfully is the path to the user configuration file in INI-format (*e.g.,* `$ perl CancerRNASeq.pl -config /path/to/file/userconfig.ini`). This file contains information such as input file paths and parameters (*e.g.,* user name, project name, alignment tool).
+The only necessary parameter to execute the pipeline successfully is the path to the user configuration file in INI-format (*e.g.,* `$ perl CancerRNASeq.pl -config /path/to/file/userconfig.ini`). This file contains information such as input file paths and user parameters (example user configuration file is attached).
