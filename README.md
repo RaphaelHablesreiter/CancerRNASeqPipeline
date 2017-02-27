@@ -9,8 +9,8 @@ The proprocessing consists of an adapter trimming, a quality trimming and a sequ
 
 Paramaters that can be added to the execution command of **CancerRNAseq** are:
 
-*`config <User Configuration File>`
-*`help`
-*`overwrite (default = FALSE)`
-*`silent (default = FALSE)`
-*`threads <Number of threads> (default = 1)`
+* `config <User Configuration File>`
+* `help`
+* `overwrite (default = FALSE)`
+* `silent (default = FALSE)`
+* `threads <Number of threads> (default = 1)`
