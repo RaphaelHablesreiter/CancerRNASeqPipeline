@@ -1,9 +1,8 @@
-# CancerRNASeq - A pipeline for transcriptomics datasets
+# CancerRNASeq
 
 ##What is **CancerRNAseq**?
-
-**CancerRNAseq** is implemented in Perl and uses R to generate various figures to visulaize the results.
-**CancerRNAseq** consists of three modules: (i) **preprocessing**, (ii) **mapping** and (iii) **analysis and visualization**.
+**CancerRNAseq** is a pipeline for transcriptomics datasets.
+**CancerRNAseq** is implemented in Perl and uses R to generate various figures to visulaize the results and consists of three modules: (i) **preprocessing**, (ii) **mapping** and (iii) **analysis and visualization**.
 
 The proprocessing consists of an adapter trimming, a quality trimming and a sequencing error correction step with three successively executed tools ([CutAdapt](http://cutadapt.readthedocs.io/en/stable/index.html), [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) and [rCorrector](https://github.com/mourisl/Rcorrector)). In the mapping step one of three alignment tools ([TopHat2](http://www.ccb.jhu.edu/software/tophat/index.shtml), [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) or [STAR](https://github.com/alexdobin/STAR)) can be chosen to map the preprocessed reads to the reference genome. The calculation of differentially expressed transcripts with the Cufflinks suite ([Cufflinks, Cuffmerge and Cuffdiff](http://cole-trapnell-lab.github.io/cufflinks/)) as well as to generate graphics of the resulting gene lists is performed in the analysis and visualization step. 
 
