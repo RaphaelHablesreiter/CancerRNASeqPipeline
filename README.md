@@ -29,3 +29,4 @@ The only necessary parameter to execute the pipeline successfully is the path to
 **CancerRNAseq** creates a folder with the user name, containing subfolders with all the intermediate files and results for the pipeline run.
 
 
+
