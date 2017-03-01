@@ -6,6 +6,12 @@
 
 The proprocessing consists of an adapter trimming, a quality trimming and a sequencing error correction step with three successively executed tools ([CutAdapt](http://cutadapt.readthedocs.io/en/stable/index.html), [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) and [rCorrector](https://github.com/mourisl/Rcorrector)). In the mapping step one of three alignment tools ([TopHat2](http://www.ccb.jhu.edu/software/tophat/index.shtml), [HISAT2](https://ccb.jhu.edu/software/hisat2/index.shtml) or [STAR](https://github.com/alexdobin/STAR)) can be chosen to map the preprocessed reads to the reference genome. The calculation of differentially expressed transcripts with the Cufflinks suite ([Cufflinks, Cuffmerge and Cuffdiff](http://cole-trapnell-lab.github.io/cufflinks/)) as well as to generate graphics of the resulting gene lists is performed in the analysis and visualization step. 
 
+##Install
+1. Clone the [GitHub repo](https://github.com/RaphaelHablesreiter/CancerRNASeqPipeline), *e.g.,* `git clone https://github.com/RaphaelHablesreiter/CancerRNASeqPipeline`
+2. To run **CancerRNAseq** call the `CancerRNASeq.pl`-file (*e.g.,* `$ perl CancerRNASeq.pl -config /path/to/file/userconfig.ini`)
+
+##Usage
+
 **CancerRNAseq** is a command line tool that can be executed by calling the `CancerRNASeq.pl`-file with the ability to add parameters directly to the execution command (*e.g.,* `$ perl CancerRNASeq.pl -config /path/to/file/userconfig.ini -silent -overwrite -threads 20`).
 
 Paramaters that can be added to the execution command of **CancerRNAseq** are:
